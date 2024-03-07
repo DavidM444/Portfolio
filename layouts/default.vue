@@ -1,4 +1,9 @@
 <template>
-    <Menu/>
-    <slot></slot>
+    <div class="container-fluid">
+        <Navar/>
+        <Vista/>
+        <slot></slot>
+        <Footer/>
+        
+    </div>
 </template>
