@@ -54,6 +54,17 @@
 a{
   text-decoration: none;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1.5s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
 </style>
+
 <script lang="ts">
+definePageMeta({
+    pageTransition: { name: 'fade'}
+})
 </script>
