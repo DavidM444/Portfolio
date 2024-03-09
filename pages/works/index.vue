@@ -2,7 +2,7 @@
     <div class="container">
       <h3>Works</h3>
       <section class="row">
-        <a href="/works/api" class="pt-3 col-12 col-sm-4 ">
+        <a href="/works/api" class="pt-md-0 pt-3 col-12 col-sm-4 ">
           <div class="card tarjeta" >
             <img src="~/assets/api.jpg" class="card-img-top " alt="...">
             <div hre class="card-body">
@@ -55,16 +55,14 @@ a{
   text-decoration: none;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 1.5s;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-</style>
 
-<script lang="ts">
+</style>
+<script lang="ts" setup>
 definePageMeta({
-    pageTransition: { name: 'fade'}
+    pageTransition: { name: 'page'}
 })
 </script>
+
+
+
+
