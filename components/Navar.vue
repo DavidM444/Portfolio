@@ -1,6 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-warning">
+        <div class="container">
             <a class="navbar-brand" href="#">Menu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,28 +8,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Contact</a>
-                    
+                    <NuxtLink class="nav-link active" aria-current="page" to="/">About</NuxtLink>
+                    <NuxtLink class="nav-link active" to="/contacto" >Contacto</NuxtLink>
+                    <NuxtLink :to="{name: 'works'}" class="nav-link active" >Works</NuxtLink>
+
                 </div>
             </div>
         </div>
     </nav>
 </template>
-
-<script lang="ts">
-
-
-
-</script>
-
-
 <style scoped>
+a{
+    color: white;
+ 
+}
 
 .active{
     border-bottom: 2px solid purple;
 
     
-}</style>
+}
+</style>
+<script lang="ts" setup>
+
+</script>
 
