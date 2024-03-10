@@ -1,20 +1,28 @@
 
 <template>
-  <NuxtLayout>
-    <NuxtPage/>
+  <main>
+    <NuxtLayout>
+    
+        <NuxtPage/>
+    
   </NuxtLayout>
+  </main>
+  
 </template>
 <style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-  background-color: rgb(62, 223, 22);
+
+
+body{
+  background-color: rgb(32, 32, 35);
 }
-.page-enter-from,
-.page-leave-to {
-  background-color: rgb(55, 31, 162);
-  opacity: 2;
-  filter: blur(1rem);
+.page-enter-active {
+  transition: opacity 2s; /* Transición de opacidad durante 2 segundos */
 }
+
+.page-enter-from {
+  opacity: 0; /* Se establece la opacidad inicial en 0 para ocultar la página */
+}
+
+
 
 </style>
