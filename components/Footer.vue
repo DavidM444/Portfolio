@@ -1,12 +1,11 @@
 <template>
-  <div class="col-12 col-sm-8 m-auto pt-2">
-    <div class="card colf">
-      <div class="card-body">
-          <footer>
-            <p align="center" class="fs">© <!-- -->{{ time }}<!-- --> David Muñoz. All Rights Reserved.</p>
-          </footer>
-      </div>
-    </div>
+  <div class="col-12 col-sm-8 m-auto colf pt-3">
+  
+      
+      <footer>
+        <p align="center" class="fs">© <!-- -->{{ time }}<!-- --> David Muñoz. All Rights Reserved.</p>
+      </footer>
+  
 
   </div>
 </template>
@@ -17,12 +16,14 @@ const time = new Date().getFullYear()
 <style scoped>
 
 .colf{
-  background-color: dodgerblue;
+  box-sizing: border-box;
+
 }
 
 .fs{
-  font-size: 14px;
+  font-size: 0.875rem;
   align-self: center;
+  color: whitesmoke;
 }
 
 </style>
