@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col text-center">
+    <div class="col text-center infoTech">
       <h2>API Quality Tex</h2>
       <p>Quality Tex, es una API de una empresa textil, que como plataforma que centraliza y administra datos
         relacionados con muestras textiles y pruebas de calidad.
@@ -30,7 +30,7 @@
           <tbody>
             <tr class="">
               <td scope="row">
-                <Icon name="vscode-icons:file-type-java" />
+                <Icon name="vscode-icons:file-type-java" size="2em"/>
                 <span class="iconify" data-icon="vscode-icons:file-type-java" data-inline="false"></span>
 
               </td>
@@ -53,7 +53,7 @@
             </tr>
             <tr class="">
               <td scope="row">
-                <Icon name="vscode-icons:file-type-mysql" />
+                <Icon name="vscode-icons:file-type-mysql" size="2em"/>
               </td>
               <td>MySql</td>
               <td>Base de datos</td>
@@ -71,7 +71,7 @@
             </tr>
             <tr class="">
               <td scope="row">
-                
+                <Icon name="logos:jwt-icon" size="2em"/>
               </td>
               <td>Jwt Token</td>
               <td>Crador de tokens de seguridad que perminte propagacion de privilegios(claims) e identidad</td>
@@ -96,8 +96,14 @@ definePageMeta({
 
 </script>
 
-<!--Transition for pages on works/   -->
+
+
 <style>
+
+/*style for content page */
+@import '~/assets/css/technologies.css';
+
+/*Transition for pages on works */
 .slide-enter-active, .slide-leave-active {
   transition: transform 0.5s ease-in-out;
 }
