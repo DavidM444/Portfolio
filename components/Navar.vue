@@ -36,7 +36,6 @@
 
             </div>
             <div class="mode">
-             
                 <button  @click="setColor" class="btn btn-primary">
                     <Icon v-if="$colorMode.value=='dark'" name="material-symbols:light-mode"/>
                     <Icon v-else value="light" name="material-symbols:dark-mode"/>
@@ -46,7 +45,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <Icon name="material-symbols:menu"/>
                 </button>
                 
 
@@ -54,8 +53,7 @@
         </div>
     </nav>
 </template>
-<script setup lang="ts">
-
+<script lang="ts" setup>
 
 function setColor(){
 
@@ -63,7 +61,10 @@ function setColor(){
     
     const newMode = currentMode === 'dark' ? 'light' : 'dark'
     
+
     useColorMode().value = newMode
+    console.log(currentMode);
+    
  /*   if(colorMode.value=='dark'){
         colorMode.value = 'light'
     }else{
@@ -88,7 +89,10 @@ function setColor(){
 </style>
 
 <style scoped>
-
+.navbar-toggler{
+    padding: 6px 12px;
+    background-color:var(--gossip-200);
+}
 
 .active{
     border-bottom: 2px solid purple;
@@ -100,8 +104,9 @@ function setColor(){
 
 @media(max-width:576px) {
     .sidebar{
-        background-color: rgb(77, 82, 101);
-        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+  z-index: 1000;
+        backdrop-filter: blur(20px);
     }
 }
 </style>
