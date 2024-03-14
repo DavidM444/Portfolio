@@ -1,23 +1,22 @@
-<template class="template">
-    <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#">WELCOME</a>
-        <div class="d-flex ms-auto">
-
-
+<template>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div>
+            <h1 class="fs-3">WELCOME</h1>
+        </div>
             <!-- expand navbar -->
 
-            <div class="offcanvas offcanvas-end sidebar justify-content-center" tabindex="-1" id="offcanvasDarkNavbar"
+            <div class="offcanvas offcanvas-end sidebar  ms-auto" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
 
                 <!-- toggler buttom -->
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
                     <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        aria-label="Close">x</button>
                 </div>
                 <!-- SideBar -->
 
-                <div class="offcanvas-body text-center ">
+                <div class="offcanvas-body  text-start menu ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <NuxtLink class="nav-link active" aria-current="page" to="/">About</NuxtLink>
@@ -35,22 +34,23 @@
                 </div>
 
             </div>
-            <div class="mode">
-                <button  @click="setColor" class="btn btn-primary">
-                    <Icon v-if="$colorMode.value=='dark'" name="material-symbols:light-mode"/>
-                    <Icon v-else value="light" name="material-symbols:dark-mode"/>
-                </button>
-            </div>
-            <div class="align-self-center ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <Icon name="material-symbols:menu"/>
-                </button>
-                
 
-            </div>
+    
+        <div class="d-flex flex-row">
+            <button @click="setColor" class="btn btn-primary">
+                <Icon v-if="$colorMode.value == 'dark'" name="material-symbols:light-mode" />
+                <Icon v-else value="light" name="material-symbols:dark-mode" />
+            </button>
+    
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <Icon name="material-symbols:menu" />
+            </button>
+        
         </div>
+
     </nav>
 </template>
 <script lang="ts" setup>
@@ -86,9 +86,22 @@ function setColor(){
 .dark-mode a{
     color: white !important;
 }
+.dark-mode .navbar{
+    background: #20202380;
+    backdrop-filter: blur(10px);
+}
+
 </style>
 
 <style scoped>
+.navbar{
+    position: fixed;
+    max-width: 60ch;
+    margin: auto;
+    backdrop-filter: blur(10px);
+
+
+}
 .navbar-toggler{
     padding: 6px 12px;
     background-color:var(--gossip-200);
@@ -100,14 +113,19 @@ function setColor(){
 
 .sidebar{
     max-width: 80%;
-}
+    display: inline
+    }
 
 @media(max-width:576px) {
-    .sidebar{
+    .sidebar .menu{
         background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
-  z-index: 1000;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(10px);
     }
+    .navbar{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
 }
 </style>
 
