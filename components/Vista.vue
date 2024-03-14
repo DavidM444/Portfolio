@@ -1,34 +1,52 @@
 <template>
-  <div>
-    <div class="fondo img-fluid container text-center">
-      <h2>Rodrigo David Muñoz</h2>
-      <h3>Desarrollador Web</h3>
+  <div class="vo">
+    <div class="fondo d-flex flex-column text-center justify-content-center">
+      <h2 class="view">Rodrigo David Muñoz</h2>
+      <h3 class="view">Desarrollador Web</h3>
 
     </div>
     
   </div>
 </template>
-<style scoped>
+<style>
+.vo{
+  padding-top: 4rem;
+}
+
 .fondo {
-  background-color: rgb(116, 82, 82);
-  margin-top: 1rem;
-
   min-height: 30vh;
-  background-size: cover;
-
 }
 
 h2 {
   font-family: 'Open sans', sans-serif;
+  color: rgb(245, 185, 96);
 
-  font-weight: 600;
-  padding-top: 2rem;
 }
 
 h3 {
   color: brown;
   font-family: "Nunito", sans-serif;
-  font-weight: 700;
+
 
 }
+
+.view{
+  animation: floatAnimation 2s infinite alternate;
+}
+.fondo > h2{
+  font-size: 3rem;
+}
+.fondo > h3{
+  font-size: 2rem;
+}
+
+@keyframes floatAnimation{
+  from{
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
 </style>
