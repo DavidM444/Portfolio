@@ -15,8 +15,13 @@
         consume esta api para mostrar de
         manera dinamica la informacion y datos que esta api provee.
       </p>
+    
+        <a href="https://davidm444.github.io/Pokedex/" target="_blank " class="btn btn-primary ">View</a>
+
+
+
     </div>
-    <div>
+    <div class="mt-3">
       <div>
         <h3>Tecnologias y recursos</h3>
       </div>
@@ -34,9 +39,6 @@
 
         </table>
       </div>
-
-
-
 
     </div>
   </div>
