@@ -42,25 +42,28 @@
 </template>
 
 <style scoped>
-
-
-
 .tarjeta > div > h5{
-  color: white;
+
   font-size: 20px;
   margin-top: 0.6rem;
   text-align: center;
 }
 
 .tarjeta > p{
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: center;
   word-wrap: break-word;
-  font-size: 14px;
-  color: white;
+
+}
+.dark-mode .tarjeta > p{
+  color: aliceblue;
 }
 .card{
   background-color: transparent;
+  border: none;
+}
+.card-title{
+  color: var(--gossip-900);
 }
 
 a{
