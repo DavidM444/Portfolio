@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="text-center">
-            <h2>Desde contacto</h2>
+            <h2>Contactame</h2>
         </div>
         <form id="sendMessage" method="post">
 
@@ -29,14 +29,7 @@
             <button tyte="submit" form="sendMessage" id="" class="btn btn-primary" href="#" role="button">Enviar</button>
 
 
-
         </form>
-
-
-
-
-
-
 
     </div>
 </template>

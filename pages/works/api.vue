@@ -91,7 +91,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'subroutes',
+  //layout: 'subroutes',
 })
 
 </script>
