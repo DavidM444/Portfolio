@@ -18,7 +18,6 @@
         Además, proporciona herramientas para la gestión de usuarios, roles y permisos, asegurando un control preciso
         sobre quién puede acceder y modificar la información.
       </p>
-
     </div>
 
     <div>
@@ -80,10 +79,6 @@
 
         </table>
       </div>
-
-
-
-
     </div>
   </div>
 
@@ -95,8 +90,6 @@ definePageMeta({
 })
 
 </script>
-
-
 
 <style>
 

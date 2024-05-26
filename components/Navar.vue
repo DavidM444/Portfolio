@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-sm fixed-top">
-        <div>
+        <div class="d-flex align-items-center justify-content-center">
             <h1 class="fs-3">WELCOME</h1>
         </div>
             <!-- expand navbar -->
@@ -9,10 +9,10 @@
                 aria-labelledby="offcanvasDarkNavbarLabel">
 
                 <!-- toggler buttom -->
-                <div class="offcanvas-header">
+                <div class="offcanvas-header header-can">
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-                        aria-label="Close">x</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <!-- SideBar -->
 
@@ -23,18 +23,14 @@
 
                         </li>
                         <li class="nav-item">
-                            <NuxtLink class="nav-link active" to="/contacto">Contacto</NuxtLink>
+                            <NuxtLink class="nav-link" to="/contacto">Contacto</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink :to="{ name: 'works' }" class="nav-link active">Works</NuxtLink>
+                            <NuxtLink :to="{ name: 'works' }" class="nav-link">Works</NuxtLink>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
     
         <div class="d-flex flex-row">
             <button @click="setColor" class="btn btn-primary">
@@ -46,7 +42,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
-                <Icon name="material-symbols:menu" />
+                <Icon name="material-symbols:menu"/>
             </button>
         
         </div>
@@ -60,7 +56,6 @@ function setColor(){
     const { value: currentMode } = useColorMode()
     
     const newMode = currentMode === 'dark' ? 'light' : 'dark'
-    
 
     useColorMode().value = newMode
     console.log(currentMode);
@@ -87,7 +82,7 @@ function setColor(){
     color: white !important;
 }
 .dark-mode .navbar{
-    background: #20202380;
+    background: #20202380 !important;
     backdrop-filter: blur(10px);
 }
 
@@ -98,7 +93,9 @@ function setColor(){
     position: fixed;
     max-width: 60ch;
     margin: auto;
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
+
 
 
 }
@@ -113,7 +110,7 @@ function setColor(){
 
 .sidebar{
     max-width: 80%;
-    display: inline
+    display: inline;
     }
 
 @media(max-width:576px) {
@@ -122,8 +119,11 @@ function setColor(){
         backdrop-filter: blur(10px);
     }
     .navbar{
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .header-can{
+        background-color: var(--gossip-200);
     }
     
 }

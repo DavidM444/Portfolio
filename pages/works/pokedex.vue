@@ -4,8 +4,6 @@
     <div class="col text-center">
       <h2>Pokedex</h2>
 
-
-
     </div>
     <div class="row p-3">
       <img src="~/assets/oip.jpg" alt="">
@@ -15,16 +13,15 @@
         consume esta api para mostrar de
         manera dinamica la informacion y datos que esta api provee.
       </p>
-    
-        <a href="https://davidm444.github.io/Pokedex/" target="_blank " class="btn btn-primary ">View</a>
 
-
-
+      <a href="https://davidm444.github.io/Pokedex/" target="_blank " class="btn btn-primary ">View</a>
     </div>
+
     <div class="mt-3">
       <div>
         <h3>Tecnologias y recursos</h3>
       </div>
+
       <div class="table-responsive-xl">
         <table class="table table-primary">
           <tbody>
@@ -36,10 +33,8 @@
               <td>Lenguaje de Programacion</td>
             </tr>
           </tbody>
-
         </table>
       </div>
-
     </div>
   </div>
 </template>
@@ -48,6 +43,4 @@
 
 </script>
 
-<style>
-
-</style>
+<style></style>

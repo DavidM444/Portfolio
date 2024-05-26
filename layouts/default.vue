@@ -1,25 +1,17 @@
 <template>
-    <div>
-        
-        <div class="page2">
-          <Navar/>
-          
-              <Vista/>
-    
-      
-        <slot></slot>
+  <div>
+    <div class="page2">
+      <Navar />
+      <Vista />
+      <slot></slot>
 
-        <Footer/>
-        </div>
+      <Footer />
     </div>
+  </div>
 </template>
 
 <style>
-
-
-
-
-.page2{
+.page2 {
   max-width: 60ch;
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -27,5 +19,4 @@
   padding-inline-end: 1rem;
 
 }
-
 </style>
