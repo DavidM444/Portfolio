@@ -1,9 +1,12 @@
 <template>
     <div>
         
-        <div class="page2" >
+        <div class="page2">
           <Navar/>
-          <Vista/>
+          
+              <Vista/>
+    
+      
         <slot></slot>
 
         <Footer/>
@@ -12,6 +15,9 @@
 </template>
 
 <style>
+
+
+
 
 .page2{
   max-width: 60ch;
