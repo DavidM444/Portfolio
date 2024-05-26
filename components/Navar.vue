@@ -57,7 +57,7 @@ function setColor(){
     
     const newMode = currentMode === 'dark' ? 'light' : 'dark'
 
-    useColorMode().value = newMode
+    useColorMode().preference = newMode
     console.log(currentMode);
     
  /*   if(colorMode.value=='dark'){
