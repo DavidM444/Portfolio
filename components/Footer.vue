@@ -23,7 +23,7 @@ const time = new Date().getFullYear()
 .fs{
   font-size: 0.875rem;
   align-self: center;
-  color: whitesmoke;
+
 }
 
 </style>
