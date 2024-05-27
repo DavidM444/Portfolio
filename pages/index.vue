@@ -2,12 +2,13 @@
   <div >
     <div>
       <div class="container description">
-        <div class="text-center p-3 p-sm-1">Hi! i am Back End Developer from Colombia.</div>
+        <div class="p-3 p-sm-1">Hola! soy desarrollador Back-End, en Colombia.</div>
+        <div class="p-3 p-sm-1">Bienvenido a mi Portfolio! 😀</div>
       </div>
       <div class="row">
-        <div class="text-left col-md-8 ">
+        <div class="text-left col-md-8">
           <h2>David Muñoz</h2>
-          <p>Amante Tecnológico(Developer /Deportist /Gamer)</p>
+          <p>Amante Tecnológico(Desarrollador /jugador de videojuegos), el deporte(fútbol )</p>
         </div>
         <div class="text-center align-self-center col-md-4">
           <img loading="lazy" src="../assets/mylogo.jpg" alt="" class=" card-img-top face">
@@ -16,7 +17,7 @@
     </div>
     <article>
       <div>
-        <h3>Work</h3>
+        <h3>Sobre mí</h3>
         <p class="about">David, es un freelacer y desarrollador web, entusiasta de la tecnología que busca crear soluciones para procesos y actividades
            que provean servicios de bienestar común. Acostumbra implementar sus ideas a través del código, encontrando múltiples formas de crear soluciones.
           Cuando no codifica suele practicar deportes como el futbol, o realizar actividades laborales del campo, teniendo un contacto con la naturaleza y
@@ -25,10 +26,10 @@
         </p>
       </div>
       <div>
-        <h3>Bio</h3>
+        <h3>Biografía</h3>
         <div>
           <span class="date">2022</span>
-          Graduado en Desarrollado Web(UNAL)
+          Graduado en Desarrollo Web(UNAL)
         </div>
         <div>
           <span class="date">2023</span>
@@ -42,13 +43,17 @@
           <span class="date">2024</span>
           Nuxt Developer
         </div>
+        <div>
+          <span class="date">2024</span>
+          Aprendiendo Redis(motor de base de datos en memoria)
+        </div>
       </div>
       <div>
         <h3>Me gusta</h3>
         <p>Codear , Jugar, Cultivar, Diseñar</p>
       </div>
       <div>
-        <h3>On media</h3>
+        <h3>Redes Sociales</h3>
         <ul>
           <li>
             <a target="_blank" href="https://github.com/DavidM444">
@@ -111,13 +116,14 @@ h3,h2,span,p,div{
  .description{
   border-radius: 1rem;
   padding: 10px;
+  text-align: center;
  }
 
 
 </style>
 <script lang="ts" setup>
 definePageMeta({
-    pageTransition: { name: 'page' }
+    pageTransition: { name: 'page' },
 })
 
 </script>
