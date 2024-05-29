@@ -8,7 +8,7 @@
     
   </div>
 </template>
-<style>
+<style scoped>
 .vo{
   padding-top: 4rem;
 }
@@ -17,27 +17,19 @@
   min-height: 30vh;
 }
 
-h2 {
-  font-family: 'Open sans', sans-serif;
-  color: rgb(245, 185, 96);
-
-}
-
-h3 {
-  color: brown;
-  font-family: "Nunito", sans-serif;
-
-
-}
-
 .view{
   animation: floatAnimation 2s infinite alternate;
 }
 .fondo > h2{
   font-size: 3rem;
+  font-family: 'Open sans', sans-serif;
+  color: var(--800);
 }
 .fondo > h3{
-  font-size: 2rem;
+  color: var(--400);
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-display: swap;
 }
 
 @keyframes floatAnimation{

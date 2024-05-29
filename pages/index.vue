@@ -73,19 +73,21 @@
 <style scoped>
 h2 {
   font-family: 'Open sans', sans-serif;
-
   font-weight: 600;
   padding-top: 2rem;
+  color: var(--800);
 }
 
 h3 {
 
   font-family: "Nunito", sans-serif;
   font-weight: 700;
+  color: var(--400);
 
 }
-h3,h2,span,p,div{
-    color: ''
+span,p,div{
+    color: var(--text-black);
+    font-family: "Nunito", sans-serif;
 }
 
 .face {
@@ -99,10 +101,7 @@ h3,h2,span,p,div{
 
 .about {
   text-indent: 1rem;
-  text-align: justify;
-  hyphens: auto;
-  font-family: 'Nunito', sans-serif;
- 
+  text-align: start;
 }
 
 .date {
