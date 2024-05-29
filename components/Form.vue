@@ -1,0 +1,35 @@
+<template>
+  <div>
+    <form id="sendMessage" method="post">
+      <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+        <small id="helpId" class="form-text text-muted">Escriba su nombre</small>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+          placeholder="abc@mail.com" />
+        <small id="emailHelpId" class="form-text text-muted">Introduzca su correo electronico</small>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Mensaje</label>
+        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+        <small id="helpId" class="form-text text-muted">Registra el mensaje</small>
+      </div>
+      <button tyte="submit" form="sendMessage" id="" class="btn btn-primary" href="#" role="button">Enviar</button>
+
+
+    </form>
+  </div>
+</template>
+
+<script lang="ts" setup>
+
+</script>
+
+<style>
+form{
+    margin-top: 1rem;
+    background-color: var(--50);
+}</style>
