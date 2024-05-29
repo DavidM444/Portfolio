@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="d-flex align-items-center justify-content-center">
-            <h1 class="fs-3">WELCOME</h1>
+            <h1 class="fs-3">Bienvenido</h1>
         </div>
             <!-- expand navbar -->
 
@@ -33,8 +33,8 @@
             </div>
     
         <div class="d-flex flex-row">
-            <button @click="setColor" class="btn btn-primary">
-                <Icon v-if="$colorMode.value == 'dark'" name="material-symbols:light-mode" />
+            <button @click="setColor" class="btn">
+                <Icon v-if="$colorMode.value == 'dark'" class="icon" name="material-symbols:light-mode" />
                 <Icon v-else value="light" name="material-symbols:dark-mode" />
             </button>
     
@@ -74,30 +74,49 @@ function setColor(){
 
 <style>
 .dark-mode body {
-  background-color: #091a28;
+  background-color: #0e0e11;
   color: #ebf4f1;
 }
 
 .dark-mode a{
     color: white !important;
 }
+
+/*
+Esto es para cuando sea el navbar pequeño
+    
 .dark-mode .navbar{
-    background: #20202380 !important;
-    backdrop-filter: blur(10px);
+   background: #20202380 !important;
+       backdrop-filter: blur(10px);
 }
+    */
+
 
 </style>
 
 <style scoped>
+h1{
+    color: var(--600);
+}
+.btn{
+    color: var(--600);
+    background-color: var(--100);
+    vertical-align: top;
+    padding: 6px 12px;
+}
+.icon{
+    vertical-align: auto;
+
+}
+
 .navbar{
     position: fixed;
     max-width: 60ch;
     margin: auto;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-
-
-
+    
+}
+.nav-link{
+    color: var(--text-black);
 }
 .navbar-toggler{
     padding: 6px 12px;
