@@ -12,7 +12,7 @@
          @blur="emailTouched = true"
           placeholder="abc@mail.com" v-model="email"/>
         <small id="emailHelpId" class="form-text text-muted" :class="{invalid:!isEmailValid && emailTouched}">
-          {{!isEmailValid && emailTouched? 'El correo no parece ser válido':'Introduzca su correo electronico '}}
+          {{!isEmailValid && emailTouched? ' El correo no parece ser válido':'Introduzca su correo electronico '}}
         </small>
       </div>
       <div class="mb-3">
@@ -57,8 +57,47 @@ const isEmailValid = computed(() => {
 .invalid{
  color: red !important;
 }
+.dark-mode .alert{
+  background-color: red;
+}
 
 form{
     margin-top: 1rem;
-    background-color: var(--50);
-}</style>
+    background-color: transparent;
+
+}
+form input{
+  border-color: var(--300);
+}
+button{
+  background-color: var(--100);
+  color: var(--600);
+  border-color: var(--600);
+}
+button:hover{
+  background-color: var(--400);
+  border-color: var(--400);
+}
+
+.dark-mode .invalid{
+  color: var(--warning) !important;
+}
+
+.dark-mode label{
+  color: var(--300);
+}
+
+.dark-mode form{
+  background-color: var(--dark-mode-bg);
+  color: var(--100)
+}
+.dark-mode input{
+  background-color: var(--100);
+  color: var(--text);
+  border-color: var(--500);
+}
+.dark-mode small{
+  color: var(--100) !important;
+}
+
+</style>
