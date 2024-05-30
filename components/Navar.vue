@@ -16,7 +16,7 @@
                 </div>
                 <!-- SideBar -->
 
-                <div class="offcanvas-body  text-start menu ">
+                <div class="offcanvas-body text-start menu ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <NuxtLink class="nav-link active" aria-current="page" to="/">About</NuxtLink>
@@ -79,8 +79,9 @@ function setColor(){
 }
 
 .dark-mode a{
-    color: white !important;
+    color: var(--500) !important;
 }
+
 
 /*
 Esto es para cuando sea el navbar pequeño
@@ -113,7 +114,6 @@ h1{
     position: fixed;
     max-width: 75ch;
     margin: auto;
-    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
 
 
@@ -149,6 +149,9 @@ h1{
         background-color: var(--gossip-200);
     }
     
+}
+.dark-mode h1{
+    color: blue;
 }
 </style>
 

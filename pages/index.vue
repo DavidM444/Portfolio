@@ -1,17 +1,17 @@
 <template>
-  <article >
+  <article>
     <div>
-      <div class="container description">
+      <div class="container text-center mb-3">
         <div class="p-3 p-sm-1">Hola! soy desarrollador Back-End, en Colombia.</div>
         <div class="p-3 p-sm-1">Bienvenido a mi Portfolio! 😀</div>
       </div>
-      <div class="row">
-        <div class="text-left col-md-8">
+      <div class="row pt-2">
+        <div class="text-left col-md-8 desc">
           <h2>David Muñoz</h2>
           <p>Amante Tecnológico(Desarrollador /jugador de videojuegos), el deporte(fútbol )</p>
         </div>
-        <div class="text-center align-self-center col-md-4">
-          <img loading="lazy" src="../assets/mylogo.jpg" alt="" class=" card-img-top face">
+        <div class="text-center align-self-center col-md-4 desc1">
+          <img loading="lazy" src="../assets/perfweb.webp" alt="" class=" card-img-top face">
         </div>
       </div>
     </div>
@@ -74,17 +74,24 @@
 h2 {
   font-family: 'Open sans', sans-serif;
   font-weight: 600;
-  padding-top: 2rem;
   color: var(--800);
 }
 
 h3 {
-
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  color: var(--400);
+  color: var(--600);
 
 }
+
+.desc {
+  width: 60%;
+}
+
+.desc1{
+  width: auto;
+}
+
 span,p,div{
     color: var(--text-black);
     font-family: "Nunito", sans-serif;
@@ -94,9 +101,8 @@ span,p,div{
   position: relative;
   height: auto;
   width: 14vh;
-  padding: 8px;
-  border-radius: 50%;
-  border: 2px solid white;
+  border-radius: 100%;
+  
 }
 
 .about {
@@ -118,7 +124,29 @@ span,p,div{
   text-align: center;
  }
 
+ /*darrk Mode colores */
 
+ .dark-mode p{
+  color: var(--100);
+ }
+ .dark-mode h2{
+  color: var(--600);
+ }
+ .dark-mode h3{
+  color: var(--400);
+ }
+.dark-mode p{
+  color: var(--100);
+}
+.dark-mode span{
+  color: var(--700);
+}
+.dark-mode div{
+  color: var(--100);
+}
+.dark-mode button{
+  color: var(--100);
+}
 </style>
 <script lang="ts" setup>
 definePageMeta({
