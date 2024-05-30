@@ -20,12 +20,12 @@
 .view{
   animation: floatAnimation 2s infinite alternate;
 }
-.fondo > h2{
+h2{
   font-size: 3rem;
   font-family: 'Open sans', sans-serif;
   color: var(--800);
 }
-.fondo > h3{
+h3{
   color: var(--400);
   font-family: "Nunito", sans-serif;
   font-weight: 600;
@@ -39,6 +39,14 @@
   to {
     transform: translateY(5px);
   }
+}
+
+/**dark mode */
+.dark-mode h2{
+  color: var(--400);
+}
+.dark-mode h3{
+  color: var(--600);
 }
 
 </style>
