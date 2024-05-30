@@ -111,8 +111,12 @@ h1{
 
 .navbar{
     position: fixed;
-    max-width: 60ch;
+    max-width: 75ch;
     margin: auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+
+
     
 }
 .nav-link{

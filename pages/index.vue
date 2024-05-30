@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <article >
     <div>
       <div class="container description">
         <div class="p-3 p-sm-1">Hola! soy desarrollador Back-End, en Colombia.</div>
@@ -66,7 +66,7 @@
         </ul>
       </div>
     </article>
-  </div>
+  </article>
 </template>
 
 

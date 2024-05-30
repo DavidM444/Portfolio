@@ -1,7 +1,6 @@
 <template>
   <div>
     <form id="sendMessage" method="post" @submit.prevent="handleSubmit">
-
       <div class="mb-3">
         <label for="" class="form-label">Nombre</label>
         <input type="text" class="form-control" name="" id="" aria-describedby="helpId" v-model="nombre" />
@@ -22,7 +21,6 @@
         <small id="helpId" class="form-text text-muted">Registra el mensaje</small>
       </div>
       <button tyte="submit" form="sendMessage" id="" class="btn btn-primary" href="#" role="button">Enviar</button>
-
     </form>
   </div>
 </template>
@@ -31,7 +29,7 @@
 
 const nombre = ref<string>('');
 const email = ref<string>('');
-const  message = ref<string>('');
+const message = ref<string>('');
 const emailTouched = ref<boolean>(false);
 
 const handleSubmit = () => {
