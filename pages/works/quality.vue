@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col text-center infoTech">
+    <div class="col mt-3 text-start infoTech">
       <h2>Quality Tex - WEB</h2>
       <p>La plataforma web que implementa esta API de gestión de calidad textil ofrece a los usuarios una interfaz intuitiva y fácil de usar para gestionar todas 
         las actividades relacionadas con las muestras textiles. Los usuarios pueden registrarse de manera segura y autenticarse para acceder a las funciones de la plataforma.
@@ -20,28 +20,28 @@
       <div class="table-responsive-xl">
         <table class="table table-primary">
           <tbody>
-            <tr class="">
+            <tr class="recursos">
               <td scope="row">
                 <Icon name="devicon:javascript" size="2em"/>
               </td>
               <td>JavaScript</td>
               <td>Lenguaje de Programacion</td>
             </tr>
-            <tr class="">
+            <tr class="recursos">
               <td scope="row">
                 <Icon name="devicon:vuejs" size="2em"/>
               </td>
               <td>Vue JS</td>
               <td>Framework de desarrollo de JavaScript</td>
             </tr>
-            <tr class="">
+            <tr class="recursos">
               <td scope="row">
                 <Icon name="devicon:bootstrap-wordmark" size="2em" />
               </td>
               <td>Boostrap</td>
               <td>Herramienta para diseño y desarrollo de sitios web</td>
             </tr>
-            <tr class="">
+            <tr class="recursos">
               <td scope="row">
                 <Icon name="material-symbols:notifications-unread" size="2em"/>
               </td>
@@ -65,9 +65,6 @@
 
 
 </script>
-
-<style>
-
-
-
+<style scoped>
+@import '~/assets/css/technologies.css';
 </style>
