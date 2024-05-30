@@ -7,10 +7,10 @@
         <div class="card tarjeta">
           <img src="~/assets/api.jpg" class=" " alt="...">
           <div>
-            <h5 class="card-title">Api </h5>
+            <h5 class="card-title">Api</h5>
           </div>
-          <p class="card-text">Api destinada al manejo y gestion de registros de calidad textil.
-            Dispone de Login y gestion de roles para los usuarios. </p>
+          <p class="card-text">Api destinada al manejo y gestión de registros de calidad textil.
+            Dispone de Login y gestión de roles para los usuarios. </p>
         </div>
       </a>
 
@@ -21,8 +21,8 @@
             <h5 class="card-title">Quality Tex</h5>
           </div>
           
-          <p class="card-text">Web para la gestion de registros textiles, en una empresa textil.
-            Presenta y maneja informacion de manera eficaz.
+          <p class="card-text">Web para la gestión de registros textiles, en una empresa textil.
+            Presenta y maneja información de manera eficaz.
           </p>
         </div>
       </a>
@@ -33,7 +33,7 @@
           <div>
             <h5 class="card-title">Pokedex</h5>
           </div>
-          <p class="card-text">Toda la informacion de tus pokemon que deses conocer, con una interfaz atractiva.
+          <p class="card-text">Toda la información de tus pokemón que deses conocer, con una interfaz atractiva.
           </p>
         </div>
       </a>
@@ -42,31 +42,35 @@
 </template>
 
 <style scoped>
-.tarjeta>div>h5 {
 
+h3{
+  font-weight: 700;
+  color: var(--500);
+  font-family: 'Noto', sans-serif;
+}
+.tarjeta>div>h5 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   font-size: 20px;
-  margin-top: 0.6rem;
+  margin-top: 8px;
   text-align: center;
 }
 
 .tarjeta>p {
-  color: black;
+  color:var(--text);
   text-align: center;
   word-wrap: break-word;
+  font-family: 'Nunito', sans-serif;
 
 }
-
-.dark-mode .tarjeta>p {
-  color: aliceblue;
-}
-
-.card {
+.tarjeta{
   background-color: transparent;
   border: none;
+
 }
 
-.card-title {
-  color: var(--gossip-900);
+.tarjeta h5 {
+  color: var(--400) ;
 }
 
 a {
@@ -77,6 +81,14 @@ a {
   row-gap: 1.5rem;
   grid-template-columns: repeat(1, minmax(0px, 1fr));
 
+}
+
+/**darik mode */
+.dark-mode .tarjeta>p {
+  color: var(--100);
+}
+.dark-mode h5{
+  color: var(--400);
 }
 </style>
 
