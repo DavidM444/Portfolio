@@ -1,13 +1,14 @@
 <template>
-    <section>
+    <div>
         <div class="text-center">
             <h2>Contactame</h2>
         </div>
         <div class="mt-3">
             Enviame tus dudas y comentarios, que con gusto responderé.
         </div> 
-    </section>
-    <Form/>
+        <Form/>
+    </div>
+ 
 </template>
 
 <style scoped>
@@ -19,10 +20,16 @@ h2{
 
 }
 
+.dark-mode h2{
+    color: var(--500)
+}
+.dark-mode div{
+    color: var(--500)
+}
 </style>
-<script setup lang="ts">
-definePageMeta({
-    pageTransition: { name: 'page'},
 
+<script lang="ts" setup>
+definePageMeta({
+    pageTransition: { name: 'page' }
 })
 </script>

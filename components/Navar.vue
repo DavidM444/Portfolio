@@ -16,17 +16,16 @@
                 </div>
                 <!-- SideBar -->
 
-                <div class="offcanvas-body text-start menu ">
+                <div class="offcanvas-body text-start">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <NuxtLink class="nav-link active" aria-current="page" to="/">About</NuxtLink>
-
+                            <NuxtLink class="nav-link" exact-active-class="active" aria-current="page" to="/">About</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/contacto">Contacto</NuxtLink>
+                            <NuxtLink class="nav-link" exact-active-class="active" to="/contacto">Contacto</NuxtLink>
                         </li>
                         <li class="nav-item">
-                            <NuxtLink :to="{ name: 'works' }" class="nav-link">Works</NuxtLink>
+                            <NuxtLink class="nav-link" exact-active-class="active" :to="{ name: 'works' }">Works</NuxtLink>
                         </li>
                     </ul>
                 </div>
@@ -34,8 +33,8 @@
     
         <div class="d-flex flex-row">
             <button @click="setColor" class="btn">
-                <Icon v-if="$colorMode.value == 'dark'" class="icon" name="material-symbols:light-mode" />
-                <Icon v-else value="light" name="material-symbols:dark-mode" />
+                <Icon v-if="$colorMode.value == 'dark'" class="icon" name="material-symbols:dark-mode" size="1.25em"/>
+                <Icon v-else value="light" class="icon" name="material-symbols:light-mode" size="1.25em"/>
             </button>
     
     
@@ -74,7 +73,7 @@ function setColor(){
 
 <style>
 .dark-mode body {
-  background-color: #0e0e11;
+  background-color: var(--dark-mode-bg);
   color: #ebf4f1;
 }
 
@@ -97,17 +96,17 @@ Esto es para cuando sea el navbar pequeño
 
 <style scoped>
 h1{
-    color: var(--600);
+    color: var(--500);
 }
 .btn{
     color: var(--600);
     background-color: var(--100);
-    vertical-align: top;
+    margin-right: 8px;
     padding: 6px 12px;
+   
 }
 .icon{
-    vertical-align: auto;
-
+    vertical-align: text-top;
 }
 
 .navbar{
@@ -115,12 +114,17 @@ h1{
     max-width: 75ch;
     margin: auto;
     backdrop-filter: blur(10px);
-
-
-    
 }
 .nav-link{
-    color: var(--text-black);
+     font-family: 'Nunito', sans-serif;
+     color: var(--text);
+     
+}
+.nav-link:hover{
+    background-color:var(--100);
+    border-radius: 7%;
+
+    
 }
 .navbar-toggler{
     padding: 6px 12px;
@@ -128,7 +132,8 @@ h1{
 }
 
 .active{
-    border-bottom: 2px solid purple;
+    border-bottom: 3px solid var(--300);
+    
 }
 
 .sidebar{
@@ -148,10 +153,6 @@ h1{
     .header-can{
         background-color: var(--gossip-200);
     }
-    
-}
-.dark-mode h1{
-    color: blue;
 }
 </style>
 

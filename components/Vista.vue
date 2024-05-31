@@ -46,7 +46,7 @@ h3{
   color: var(--400);
 }
 .dark-mode h3{
-  color: var(--600);
+  color: var(--400);
 }
 
 </style>
