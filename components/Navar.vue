@@ -16,7 +16,7 @@
                 </div>
                 <!-- SideBar -->
 
-                <div class="offcanvas-body text-start">
+                <div class="offcanvas-body text-start nav-small">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <NuxtLink class="nav-link" exact-active-class="active" aria-current="page" to="/">About</NuxtLink>
@@ -38,7 +38,7 @@
             </button>
     
     
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler button-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
                 <Icon name="material-symbols:menu"/>
@@ -50,21 +50,15 @@
 </template>
 <script lang="ts" setup>
 
+//change the system color mode
 function setColor(){
-
     const { value: currentMode } = useColorMode()
     
     const newMode = currentMode === 'dark' ? 'light' : 'dark'
+    const mode = currentMode ==='system'
 
     useColorMode().preference = newMode
     console.log(currentMode);
-    
- /*   if(colorMode.value=='dark'){
-        colorMode.value = 'light'
-    }else{
-    colorMode.value='dark'
-    }
-*/
 }
 
 
@@ -123,12 +117,11 @@ h1{
 .nav-link:hover{
     background-color:var(--100);
     border-radius: 7%;
-
     
 }
 .navbar-toggler{
     padding: 6px 12px;
-    background-color:var(--gossip-200);
+
 }
 
 .active{
@@ -142,17 +135,30 @@ h1{
     }
 
 @media(max-width:576px) {
-    .sidebar .menu{
-        background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
-        backdrop-filter: blur(10px);
-    }
     .navbar{
         padding-right: 1rem;
         padding-left: 1rem;
+
     }
     .header-can{
-        background-color: var(--gossip-200);
+        background-color: var(--200);
     }
+  
+    .offcanvas{
+        background-color: transparent;
+        border-left: none;
+        max-width: 50%;
+
+    }
+    .button-toggler{
+        background-color: var(--100);
+        border: none;
+    }
+
+    .nav-small{
+        background-color: var(--50);
+        border-radius: 0px 0px 0px 10px;
+    }  
 }
 </style>
 
