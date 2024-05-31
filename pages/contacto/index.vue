@@ -4,11 +4,10 @@
             <h2>Contactame</h2>
         </div>
         <div class="mt-3">
-            Enviame tus dudas y comentarios, que con gusto responderé.
+            Enviame tus dudas y comentarios.
         </div> 
         <Form/>
     </div>
- 
 </template>
 
 <style scoped>

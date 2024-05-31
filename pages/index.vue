@@ -8,7 +8,7 @@
       <div class="row pt-2">
         <div class="text-left col-md-8 desc">
           <h2>David Muñoz</h2>
-          <p>Amante Tecnológico(Desarrollador /jugador de videojuegos), el deporte(fútbol )</p>
+          <p>Amante Tecnológico (Desarrollador / Jugador de videojuegos), también del deporte (fútbol).</p>
         </div>
         <div class="text-center align-self-center col-md-4 desc1">
           <img loading="lazy" src="../assets/perfweb.webp" alt="" class=" card-img-top face">
@@ -18,11 +18,10 @@
     <article>
       <div>
         <h3>Sobre mí</h3>
-        <p class="about">David, es un freelacer y desarrollador web, entusiasta de la tecnología que busca crear soluciones para procesos y actividades
-           que provean servicios de bienestar común. Acostumbra implementar sus ideas a través del código, encontrando múltiples formas de crear soluciones.
-          Cuando no codifica suele practicar deportes como el futbol, o realizar actividades laborales del campo, teniendo un contacto con la naturaleza y
-          disfrutando de lo que lo rodea. Actualmente estudia la implementación de nuevos conceptos en el área del back end con nuevas tecnologías.
-
+        <p class="about">David es un freelancer y desarrollador web, entusiasta de la tecnología, que busca crear soluciones para procesos y actividades que provean servicios de bienestar común.
+          Acostumbra a implementar sus ideas a través del código, encontrando múltiples formas de crear soluciones.
+          Cuando no está codificando, suele practicar deportes como el fútbol o realizar actividades laborales en el campo, disfrutando del contacto con la naturaleza y lo que lo rodea.
+          Actualmente, está estudiando la implementación de nuevos conceptos en el área del backend con nuevas tecnologías.
         </p>
       </div>
       <div>

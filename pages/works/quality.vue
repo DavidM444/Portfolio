@@ -4,7 +4,7 @@
       <h2>Quality Tex - WEB</h2>
       <p>La plataforma web que implementa esta API de gestión de calidad textil ofrece a los usuarios una interfaz intuitiva y fácil de usar para gestionar todas 
         las actividades relacionadas con las muestras textiles. Los usuarios pueden registrarse de manera segura y autenticarse para acceder a las funciones de la plataforma.
-         Una vez dentro, podrán cargar datos detallados de muestras textiles, incluyendo información sobre pruebas específicas y resultados obtenidos
+         Una vez dentro, podrán cargar datos detallados de muestras textiles, incluyendo información sobre pruebas específicas y resultados obtenidos.
       </p>
       <p>
         La web proporciona herramientas de visualización y análisis de datos que permiten a los usuarios realizar un seguimiento detallado de la calidad de las telas a lo largo del tiempo.
@@ -15,7 +15,7 @@
 
     <div>
       <div>
-        <h3>Tecnologias y recursos</h3>
+        <h3>Tecnologías y recursos</h3>
       </div>
       <div class="table-responsive-xl">
         <table class="table table-primary">
@@ -25,7 +25,7 @@
                 <Icon name="devicon:javascript" size="2em"/>
               </td>
               <td>JavaScript</td>
-              <td>Lenguaje de Programacion</td>
+              <td>Lenguaje de Programación</td>
             </tr>
             <tr class="recursos">
               <td scope="row">
@@ -46,17 +46,11 @@
                 <Icon name="material-symbols:notifications-unread" size="2em"/>
               </td>
               <td>SweetAlert2</td>
-              <td>Biblioteca para cracion de mensajes de alerta.</td>
+              <td>Biblioteca para cración de mensajes de alerta.</td>
             </tr>
-            
           </tbody>
-
         </table>
       </div>
-
-
-
-
     </div>
   </div>
 </template>

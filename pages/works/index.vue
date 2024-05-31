@@ -9,8 +9,8 @@
           <div>
             <h5 class="card-title">Api</h5>
           </div>
-          <p class="card-text">Api destinada al manejo y gestión de registros de calidad textil.
-            Dispone de Login y gestión de roles para los usuarios. </p>
+          <p class="card-text">API destinada al manejo y gestión de registros de calidad textil.
+            Incluye funcionalidades de inicio de sesión y gestión de roles para los usuarios.</p>
         </div>
       </a>
 
