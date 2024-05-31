@@ -58,7 +58,7 @@
           <li>
             <a target="_blank" href="https://github.com/DavidM444">
               <button class="btn">
-                <Icon name="bxl:github" size="1.5em" />
+                <Icon name="bxl:github" class="icon" size="1.5em" />
                 @davidm444
               </button>
             </a>
@@ -96,6 +96,9 @@ span,p,div{
     color: var(--text-black);
     font-family: "Nunito", sans-serif;
 }
+.btn:hover{
+  color: var(--500);
+}
 
 .face {
   position: relative;
@@ -114,6 +117,13 @@ span,p,div{
   font-weight: bold;
   margin-right: 1rem;
 }
+li{
+  list-style-type: none;
+}
+ul{
+  padding: 0;
+
+}
 
 /** Decription
  */
@@ -122,6 +132,10 @@ span,p,div{
   border-radius: 1rem;
   padding: 10px;
   text-align: center;
+ }
+
+ .icon{
+  margin-right: 1rem;
  }
 
  /*darrk Mode colores */
