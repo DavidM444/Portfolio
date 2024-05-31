@@ -1,22 +1,17 @@
 <template>
   <div class="row">
-
-    <div class="col text-center">
+    <div class="col text-start infoTech">
       <h2>Pokedex</h2>
-
-    </div>
-    <div class="row p-3">
+      
+      <div class="row p-3">
       <img src="~/assets/oip.jpg" alt="">
     </div>
-    <div class="tex-center">
-      <p>Es una web que muestra toda la informacion acerca de los pokemones que existen en la api PokeApi. Esta web
+     <p>Es una web que muestra toda la informacion acerca de los pokemones que existen en la api PokeApi. Esta web
         consume esta api para mostrar de
         manera dinamica la informacion y datos que esta api provee.
       </p>
-
-      <a href="https://davidm444.github.io/Pokedex/" target="_blank " class="btn btn-primary ">View</a>
     </div>
-
+    <ButtonLink :url=url />    
     <div class="mt-3">
       <div>
         <h3>Tecnologias y recursos</h3>
@@ -25,7 +20,7 @@
       <div class="table-responsive-xl">
         <table class="table table-primary">
           <tbody>
-            <tr class="">
+            <tr class="recursos">
               <td scope="row">
                 <Icon name="devicon:javascript" size="2em" />
               </td>
@@ -40,7 +35,14 @@
 </template>
 
 <script lang="ts" setup>
-
+const url = {
+  link:"https://davidm444.github.io/Pokedex/",
+  text: "Follow"
+}
 </script>
 
-<style></style>
+
+
+<style scoped>
+@import '~/assets/css/technologies.css';
+</style>

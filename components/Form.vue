@@ -2,13 +2,13 @@
   <div>
     <form id="sendMessage" method="post" @submit.prevent="handleSubmit">
       <div class="mb-3">
-        <label for="" class="form-label">Nombre</label>
-        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" v-model="nombre" />
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" v-model="nombre" />
         <small id="helpId" class="form-text text-muted">Escriba su nombre</small>
       </div>
       <div class="mb-3">
-        <label for="" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
          @blur="emailTouched = true"
           placeholder="abc@mail.com" v-model="email"/>
         <small id="emailHelpId" class="form-text text-muted" :class="{invalid:!isEmailValid && emailTouched}">
@@ -16,16 +16,17 @@
         </small>
       </div>
       <div class="mb-3">
-        <label for="" class="form-label">Mensaje</label>
-        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" v-model="message"/>
+        <label for="message" class="form-label">Mensaje</label>
+        <input type="text" class="form-control" name="message" id="message" aria-describedby="helpId" placeholder="" v-model="message"/>
         <small id="helpId" class="form-text text-muted">Registra el mensaje</small>
       </div>
-      <button tyte="submit" form="sendMessage" id="" class="btn btn-primary" href="#" role="button">Enviar</button>
+      <ButtonLink :url=dataButton />
     </form>
   </div>
 </template>
 
 <script lang="ts" setup>
+import ButtonLink from './ButtonLink.vue';
 
 const nombre = ref<string>('');
 const email = ref<string>('');
@@ -50,7 +51,10 @@ const isEmailValid = computed(() => {
     return emailPattern.test(val);
  };
 
-
+const dataButton = {
+  link: "#",
+  text: "Send"
+}
 </script>
 
 <style scoped>
@@ -69,14 +73,8 @@ form{
 form input{
   border-color: var(--300);
 }
-button{
-  background-color: var(--100);
-  color: var(--600);
-  border-color: var(--600);
-}
-button:hover{
-  background-color: var(--400);
-  border-color: var(--400);
+form label{
+  font-family: 'Nunito',sans-serif;
 }
 
 .dark-mode .invalid{

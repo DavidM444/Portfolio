@@ -18,7 +18,7 @@ defineProps({
 
 </script>
 
-<style>
+<style scoped>
 
 button{
   padding: 8px 16px;
