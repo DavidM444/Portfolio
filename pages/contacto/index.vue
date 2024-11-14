@@ -14,8 +14,7 @@
 h2{
     margin: auto;
     color: var(--600);
-    text-align: center;
-    padding: 2rem;
+    text-align: start;
 
 }
 
