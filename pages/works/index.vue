@@ -5,7 +5,7 @@
     <section class="row">
       <a href="/works/api" class=" pt-3 col-12  col-sm-6">
         <div class="card tarjeta">
-          <img src="~/assets/api.jpg" class=" " alt="...">
+          <img loading="lazy" src="~/assets/api.webp" alt="ilustracion api github" width="100%" height="100%">
           <div>
             <h5 class="card-title">Api</h5>
           </div>
@@ -16,7 +16,7 @@
 
       <a href="/works/quality" class="pt-3  col-12 col-sm-6 ">
         <div class="card tarjeta">
-          <img src="~/assets/qualitytex.jpg" alt="...">
+          <img src="~/assets/qualitytex.webp" alt="ilustracion web Quality Tex"  width="100%" height="100%">
           <div>
             <h5 class="card-title">Quality Tex</h5>
           </div>
@@ -27,9 +27,9 @@
         </div>
       </a>
 
-      <a href="/works/pokedex" class="pt-3  col-12 col-sm-6">
+      <a href="/works/pokedex" class="pt-3  col-12 col-sm-6"  width="100%" height="100%">
         <div class="card tarjeta">
-          <img src="~/assets/oip.jpg" alt="...">
+          <img src="~/assets/oip.webp" alt="pokedex">
           <div>
             <h5 class="card-title">Pokedex</h5>
           </div>
