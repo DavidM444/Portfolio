@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "nodemailer": "^6.9.16",
     "nuxt": "^3.10.3",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.3.2",
+    "@types/nodemailer": "^6.4.16",
     "nuxt-icon": "^0.6.9"
   }
 }

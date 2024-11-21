@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <h3>Works</h3>
+    <h3>Trabajos</h3>
 
     <section class="row">
       <a href="/works/api" class=" pt-3 col-12  col-sm-6">
         <div class="card tarjeta">
           <img loading="lazy" src="~/assets/api.webp" alt="ilustracion api github" width="100%" height="100%">
           <div>
-            <h5 class="card-title">Api</h5>
+            <h5 class="card-title">API Gestión Textil</h5>
           </div>
           <p class="card-text">API destinada al manejo y gestión de registros de calidad textil.
             Incluye funcionalidades de inicio de sesión y gestión de roles para los usuarios.</p>
@@ -27,20 +27,19 @@
         </div>
       </a>
 
-      <a href="/works/pokedex" class="pt-3  col-12 col-sm-6"  width="100%" height="100%">
+      <a href="/works/apprevenue" class="pt-3  col-12 col-sm-6"  width="100%" height="100%">
         <div class="card tarjeta">
-          <img src="~/assets/oip.webp" alt="pokedex">
+          <img src="~/assets/revenue.webp" loading="lazy" alt="pokedex">
           <div>
-            <h5 class="card-title">Pokedex</h5>
+            <h5 class="card-title">App revenue</h5>
           </div>
-          <p class="card-text">Toda la información de tus pokemón que deses conocer, con una interfaz atractiva.
+          <p class="card-text">Web para manejar ingresos y gastos monetarios en COP(pesos colombianos).
           </p>
         </div>
       </a>
     </section>
   </div>
 </template>
-
 <style scoped>
 
 h3{
@@ -94,6 +93,8 @@ a {
 
 <script lang="ts" setup>
 definePageMeta({
+  title: 'Proyectos',
+  description: 'Proyectos realizados con tecnolgias como Nuxt.js , Srprig Boot, Postgresql',
   pageTransition: { name: 'page' }
 })
 </script>

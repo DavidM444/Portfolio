@@ -1,18 +1,19 @@
 <template>
     <div>
         <div class="text-center">
-            <h2>Contactame</h2>
+            <h3>Contactame</h3>
         </div>
         <div class="mt-3">
-            Enviame tus dudas y comentarios.
+            Dejame un mensaje al correo.
         </div> 
         <Form/>
     </div>
 </template>
 
 <style scoped>
-h2{
+h3{
     margin: auto;
+    font-family: 'Nunito', sans-serif;
     color: var(--600);
     text-align: start;
 
@@ -27,7 +28,14 @@ h2{
 </style>
 
 <script lang="ts" setup>
+
 definePageMeta({
+    title: 'Pagina de contacto',
+    description: 'Contacta a David Muñoz a traves de correo, dejando un mensaje',
     pageTransition: { name: 'page' }
 })
+
+
+
+
 </script>

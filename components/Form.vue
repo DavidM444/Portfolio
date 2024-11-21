@@ -20,10 +20,11 @@
         <input v-model="emailToSend.mensage" type="text" class="form-control" name="message" id="message" aria-describedby="helpId" placeholder="" />
         <small id="helpId" class="form-text text-muted">Registra el mensaje</small>
       </div>
+      
       <button class="btn btn-success" type="submit">Enviar</button>
     </form>
     <p v-if="success">¡Mensaje enviado con éxito!</p>
-    <p v-if="error">{{ error }}</p>
+    <p v-if="error">Ocurrio un error: {{ error }}</p>
   </div>
 </template>
 

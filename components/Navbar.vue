@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="d-flex align-items-center justify-content-center">
-            <h1 class="fs-3">Bienvenido</h1>
+            <h2 class="fs-3">Bienvenido</h2>
         </div>
             <!-- expand navbar -->
 
@@ -19,14 +19,14 @@
                 <div class="offcanvas-body text-start nav-small">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" exact-active-class="active" aria-current="page" to="/">About</NuxtLink>
+                            <NuxtLink class="nav-link" exact-active-class="active" aria-current="page" to="/">Inicio</NuxtLink>
+                        </li><li class="nav-item">
+                            <NuxtLink class="nav-link" exact-active-class="active" :to="{ name: 'works' }">Trabajos</NuxtLink>
                         </li>
                         <li class="nav-item">
                             <NuxtLink class="nav-link" exact-active-class="active" to="/contacto">Contacto</NuxtLink>
                         </li>
-                        <li class="nav-item">
-                            <NuxtLink class="nav-link" exact-active-class="active" :to="{ name: 'works' }">Works</NuxtLink>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -89,7 +89,7 @@ Esto es para cuando sea el navbar pequeño
 </style>
 
 <style scoped>
-h1{
+h2{
     color: var(--500);
 }
 .btn{

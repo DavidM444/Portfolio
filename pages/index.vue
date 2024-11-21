@@ -2,29 +2,36 @@
   <main>
     <div>
       <div class="container text-center mb-3">
-        <div class="p-3 p-sm-1">Hola! soy desarrollador Back-End, en Colombia.</div>
+        <div class="p-3 p-sm-1">Hola! soy desarrollador de software con enfasis en Backend.</div>
         <div class="p-3 p-sm-1">Bienvenido a mi Portfolio! 😀</div>
       </div>
       <div class="row pt-2">
         <div class="text-left col-md-8 desc">
           <h2>David Muñoz</h2>
-          <p>Amante Tecnológico (Desarrollador / Jugador de videojuegos), también del deporte (fútbol).</p>
+          <p>Desarrollador Back-End con conociento en ecosistema Java y Bases de datos SQL - Postgresql.</p>
         </div>
         <div class="text-center align-self-center col-md-4 desc1">
-          <img loading="lazy" src="../assets/perfweb.webp" alt="" class=" card-img-top face">
+          <img loading="lazy" src="../assets/perfweb.webp" alt="David Muñoz, desarrollador backend, ilustratión perfil"
+            class="card-img-top face">
         </div>
       </div>
     </div>
     <article>
-      <div>
+      <section>
         <h3>Sobre mí</h3>
-        <p class="about">David es un freelancer y desarrollador web, entusiasta de la tecnología, que busca crear soluciones para procesos y actividades que provean servicios de bienestar común.
-          Acostumbra a implementar sus ideas a través del código, encontrando múltiples formas de crear soluciones.
-          Cuando no está codificando, suele practicar deportes como el fútbol o realizar actividades laborales en el campo, disfrutando del contacto con la naturaleza y lo que lo rodea.
-          Actualmente, está estudiando la implementación de nuevos conceptos en el área del backend con nuevas tecnologías.
+        <p class="about">David es un freelancer y desarrollador backend, entusiasta de la tecnología, que busca crear
+          soluciones para procesos y actividades que provean servicios de bienestar común.
+          Implementa sus ideas a través del código, encontrando múltiples formas de crear soluciones.
+          Suele practicar deportes como el fútbol o realizar actividades laborales en el
+          campo, disfrutando del contacto con la naturaleza y lo que lo rodea.
         </p>
-      </div>
-      <div>
+        <p class="about">Actualmente, está estudiando la implementación de nuevos conceptos en el área del backend, en
+          el cual maneja tecnolgías como Java - SprigBoot, MySql , Posgresql, Redis Db, entre otras.
+          También ha ralizado proyectos fronted, usando tecnologias como Nuxt.s, Vue.js, y herramientas de este
+          ecosistema.
+        </p>
+      </section>
+      <section>
         <h3>Biografía</h3>
         <div>
           <span class="date">2022</span>
@@ -46,17 +53,17 @@
           <span class="date">2024</span>
           Aprendiendo Redis(motor de base de datos en memoria)
         </div>
-      </div>
-      <div>
+      </section>
+      <section class="pt-3">
         <h3>Me gusta</h3>
-        <p>Codear , Jugar, Cultivar, Diseñar</p>
-      </div>
+        <p>Codear, practicar ciclismo, cultivar, conocer y probar nuevas tecnolgias.</p>
+      </section>
       <div>
         <h3>Redes Sociales</h3>
         <ul>
           <li>
             <a target="_blank" href="https://github.com/DavidM444">
-              <button class="btn">
+              <button class="btn" aria-label="Ver perfil de GitHub">
                 <Icon name="bxl:github" class="icon" size="1.5em" />
                 @davidm444
               </button>
@@ -78,7 +85,6 @@ h2 {
 
 h3 {
   font-family: "Nunito", sans-serif;
-  font-weight: 700;
   color: var(--600);
 
 }
@@ -87,15 +93,18 @@ h3 {
   width: 60%;
 }
 
-.desc1{
+.desc1 {
   width: auto;
 }
 
-span,p,div{
-    color: var(--text-black);
-    font-family: "Nunito", sans-serif;
+span,
+p,
+div {
+  color: var(--text-black);
+  font-family: "Nunito", sans-serif;
 }
-.btn:hover{
+
+.btn:hover {
   color: var(--500);
 }
 
@@ -104,7 +113,7 @@ span,p,div{
   height: auto;
   width: 14vh;
   border-radius: 100%;
-  
+
 }
 
 .about {
@@ -116,10 +125,12 @@ span,p,div{
   font-weight: bold;
   margin-right: 1rem;
 }
-li{
+
+li {
   list-style-type: none;
 }
-ul{
+
+ul {
   padding: 0;
 
 }
@@ -127,43 +138,72 @@ ul{
 /** Decription
  */
 
- .description{
+.description {
   border-radius: 1rem;
   padding: 10px;
   text-align: center;
- }
+}
 
- .icon{
+.icon {
   margin-right: 1rem;
- }
+}
 
- /*darrk Mode colores */
+/*darrk Mode colores */
 
- .dark-mode p{
-  color: var(--100);
- }
- .dark-mode h2{
-  color: var(--600);
- }
- .dark-mode h3{
-  color: var(--400);
- }
-.dark-mode p{
+.dark-mode p {
   color: var(--100);
 }
-.dark-mode span{
+
+.dark-mode h2 {
+  color: var(--600);
+}
+
+.dark-mode h3 {
+  color: var(--400);
+}
+
+.dark-mode p {
+  color: var(--100);
+}
+
+.dark-mode span {
   color: var(--700);
 }
-.dark-mode div{
+
+.dark-mode div {
   color: var(--100);
 }
-.dark-mode button{
+
+.dark-mode button {
   color: var(--100);
 }
 </style>
 <script lang="ts" setup>
 definePageMeta({
-    pageTransition: { name: 'page' },
+  title: 'David Muñoz | Desarrollador Back-End en Colombia',
+  meta: [
+    {
+      name: 'description',
+      content: 'Conoce el portafolio de David Muñoz, desarrollador especializado en backend, tecnología, y soluciones digitales.',
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: `
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Sobre mí",
+          "description": "Conoce más sobre David Muñoz, desarrollador backend en Colombia.",
+        }
+      `,
+    },
+  ],
+
+  ogTitle: 'David Muñoz - Portfolio Back-End Developer',
+  ogDescription: 'Descubre más sobre mi experiencia como desarrollador back-end y mis proyectos recientes.',
+  pageTransition: { name: 'page' },
 })
 
 </script>

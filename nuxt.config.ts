@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+
       link: [
         {
           rel: 'stylesheet',
@@ -29,6 +30,20 @@ export default defineNuxtConfig({
       ]
     },
     pageTransition: true,
+    buildAssetsDir: '/_nuxt/',
  
-  }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "@/assets/css/main.css";` // Si usas SCSS
+        }
+      }
+    },
+    build: {
+      minify: true,
+    }
+  },
+  
 })

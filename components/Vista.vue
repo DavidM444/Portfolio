@@ -2,7 +2,8 @@
   <div class="vo">
     <div class="fondo d-flex flex-column text-center justify-content-center">
       <h2 class="view">Rodrigo David Muñoz</h2>
-      <h3 class="view">Desarrollador Web</h3>
+      <h3 class="view">Desarrollador de Software
+      </h3>
 
     </div>
     

@@ -1,13 +1,13 @@
 <template>
   <div class="row">
     <div class="col text-start infoTech">
-      <h2>Pokedex</h2>
+      <h2>Gestor de gastos e ingresos</h2>
       
       <div class="row p-3">
-      <img src="~/assets/oip.jpg" alt="">
+      <img src="~/assets/revenue.webp" alt="">
     </div>
-     <p>Es una web que muestra toda la información acerca de los pokemones que existen en la PokeApi. Esta web
-        consume esta api para mostrar de manera dinámica la información y datos que esta API provee.
+     <p>Es una web que permite llevar una gestion de tus gastos e ingresos monetarios. El monto manejado por la app, esta definido
+      en pesos colombianos(COP).
       </p>
     </div>
     <ButtonLink :url=url />    
@@ -21,9 +21,9 @@
           <tbody>
             <tr class="recursos">
               <td scope="row">
-                <Icon name="devicon:javascript" size="2em" />
+                <Icon name="vscode-icons:file-type-java" size="2em"/>
               </td>
-              <td>JavaScript</td>
+              <td>Java</td>
               <td>Lenguaje de Programación</td>
             </tr>
           </tbody>
@@ -35,8 +35,8 @@
 
 <script lang="ts" setup>
 const url = {
-  link:"https://davidm444.github.io/Pokedex/",
-  text: "Follow"
+  link:"https://github.com/DavidM444/Account",
+  text: "Visitar"
 }
 </script>
 

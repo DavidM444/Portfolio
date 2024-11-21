@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button>
+    <button type="submit">
       <a class="butom" :href="url.link" >{{ url.text }}</a>
     </button>
   </div>
