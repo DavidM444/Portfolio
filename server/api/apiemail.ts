@@ -62,6 +62,24 @@ export default defineEventHandler(async (event) => {
       <div class="email-container">
         <div class="email-header">
           <h1>¡Gracias por contactarme!</h1>
+<<<<<<< HEAD
+=======
+        </div>
+        <div class="email-body">
+          <p>Hola ${body.nombre},</p>
+          <p>¿En que puedo ayudarte?. Responde a este correo para saber cómo coloborarte.</p>
+          <p>Atentamente: David Muñoz.</p>
+        </div>
+        <div class="email-footer">
+          <p>Si no realizaste esta solicitud, por favor ignora este correo.</p>
+          <p> 2024 - Informacion de contacto</p>
+        </div>
+      </div>
+    </body>
+      <div class="email-container">
+        <div class="email-header">
+          <h1>¡Bienvenido a Nuestra Empresa!</h1>
+>>>>>>> dd169114751d538f394388ed48246e6d64b730ac
         </div>
         <div class="email-body">
           <p>Hola ${body.nombre},</p>
