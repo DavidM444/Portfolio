@@ -12,7 +12,7 @@
          @blur="emailTouched = true"
           placeholder="abc@mail.com" />
         <small id="emailHelpId" class="form-text text-muted" :class="{invalid:!isEmailValid && emailTouched}">
-          {{!isEmailValid && emailTouched? ' El correo no parece ser válido':'Introduzca su correo electronico '}}
+          {{!isEmailValid && emailTouched? ' El correo no parece ser válido':'Introduzca su correo electrónico '}}
         </small>
       </div>
       <div class="mb-3">
@@ -31,10 +31,15 @@
 <script lang="ts" setup>
 
 import { ref } from 'vue';
+
+
+
+
 import type { Post } from '~/types/types';
 import { useCreatemail } from '#imports';
 
 const emailTouched = ref<boolean>(false);
+
 const emailToSend = ref<Post>({
   nombre: '',
   email: '',
@@ -45,6 +50,7 @@ const success = ref(false);
 const error = ref<string | null>(null);
 
 const handleSubmit = async () => {
+
   emailTouched.value = true;
   if (isEmailValid.value) {
     try {
@@ -74,11 +80,6 @@ const dataButton = {
   link: "#",
   text: "Send"
 }
-
-
-
-
-
 
 </script>
 

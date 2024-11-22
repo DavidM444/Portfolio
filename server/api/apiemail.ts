@@ -3,13 +3,12 @@ import nodemailer from 'nodemailer'
 import {Post} from '~/types/types'
 export default defineEventHandler(async (event) => {
   const body = await readBody<Post>(event);
-  console.log("peticion recibida")
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",// O usa otro servicio
+    service: "gmail",
     auth: {
-      user: process.env.EM_EM, // Configura tu email
-      pass: process.env.EM_PAS, // Configura tu contraseña
+      user: process.env.EM_EM,
+      pass: process.env.EM_PAS, 
     },
   });
 
@@ -56,21 +55,25 @@ export default defineEventHandler(async (event) => {
           color: #777777;
           border-top: 1px solid #ddd;
         }
-        .button {
-          display: inline-block;
-          background-color: #4CAF50;
-          color: white;
-          text-decoration: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          margin-top: 20px;
-        }
-        .button:hover {
-          background-color: #45a049;
-        }
+       
       </style>
     </head>
     <body>
+      <div class="email-container">
+        <div class="email-header">
+          <h1>¡Gracias por contactarme!</h1>
+        </div>
+        <div class="email-body">
+          <p>Hola ${body.nombre},</p>
+          <p>¿En que puedo ayudarte?. Responde a este correo para saber cómo coloborarte.</p>
+          <p>Atentamente: David Muñoz.</p>
+        </div>
+        <div class="email-footer">
+          <p>Si no realizaste esta solicitud, por favor ignora este correo.</p>
+          <p> 2024 - Informacion de contacto</p>
+        </div>
+      </div>
+    </body>
       <div class="email-container">
         <div class="email-header">
           <h1>¡Bienvenido a Nuestra Empresa!</h1>
@@ -94,7 +97,7 @@ export default defineEventHandler(async (event) => {
     await transporter.sendMail({
       from: 'ngxdavid050@gmail.com',
       to: body.email, // Tu correo de recepción
-      subject: `Mensaje de ${body.nombre}`,
+      subject: `Mensaje de David Muñoz`,
       text: "Hola como estas, gracias por contactarme",
       html: htmlcontent
     });
