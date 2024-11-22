@@ -74,22 +74,6 @@ export default defineEventHandler(async (event) => {
         </div>
       </div>
     </body>
-      <div class="email-container">
-        <div class="email-header">
-          <h1>¡Bienvenido a Nuestra Empresa!</h1>
-        </div>
-        <div class="email-body">
-          <p>Hola [Nombre],</p>
-          <p>Gracias por registrarte en nuestro servicio. Estamos emocionados de tenerte a bordo.</p>
-          <p>Haz clic en el botón a continuación para confirmar tu correo electrónico:</p>
-          <a href="https://tu-sitio-web.com/confirmar" class="button">Confirmar Email</a>
-        </div>
-        <div class="email-footer">
-          <p>Si no realizaste esta solicitud, por favor ignora este correo.</p>
-          <p>&copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
-        </div>
-      </div>
-    </body>
     </html>`
 
   try {
