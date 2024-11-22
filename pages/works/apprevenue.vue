@@ -2,11 +2,10 @@
   <div class="row">
     <div class="col text-start infoTech">
       <h2>Gestor de gastos e ingresos</h2>
-      
       <div class="row p-3">
-      <img src="~/assets/revenue.webp" alt="">
+      <img src="~/assets/revenue.webp" alt="app revenue">
     </div>
-     <p>Es una web que permite llevar una gestion de tus gastos e ingresos monetarios. El monto manejado por la app, esta definido
+     <p>Es una web que permite llevar una gestión de tus gastos e ingresos monetarios. El monto manejado por la app, esta definido
       en pesos colombianos(COP).
       </p>
     </div>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <form id="sendMessage" method="post" @submit.prevent="handleSubmit">
+    <form id="sendMessage" method="post" @submit.prevent="handleSubmit" >
       <div class="mb-3">
         <label for="name" class="form-label">Nombre</label>
-        <input v-model="emailToSend.nombre" type="text" class="form-control" name="name" id="name" aria-describedby="helpId" />
+        <input v-model="emailToSend.nombre" type="text" class="form-control" name="name" id="name" aria-describedby="helpId" required/>
         <small id="helpId" class="form-text text-muted">Escriba su nombre</small>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Correo Electrónico</label>
-        <input v-model="emailToSend.email" type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+        <input v-model="emailToSend.email" type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" required
          @blur="emailTouched = true"
           placeholder="abc@mail.com" />
         <small id="emailHelpId" class="form-text text-muted" :class="{invalid:!isEmailValid && emailTouched}">
@@ -17,11 +17,11 @@
       </div>
       <div class="mb-3">
         <label for="message" class="form-label">Mensaje</label>
-        <input v-model="emailToSend.mensage" type="text" class="form-control" name="message" id="message" aria-describedby="helpId" placeholder="" />
+        <input v-model="emailToSend.mensage" type="text" class="form-control" name="message" id="message" aria-describedby="helpId" required/>
         <small id="helpId" class="form-text text-muted">Registra el mensaje</small>
       </div>
       
-      <button class="btn btn-success" type="submit">Enviar</button>
+      <button class="btn btn-success" type="submit" aria-describedby="enviar formulario">Enviar</button>
     </form>
     <p v-if="success">¡Mensaje enviado con éxito!</p>
     <p v-if="error">Ocurrio un error: {{ error }}</p>
@@ -31,15 +31,10 @@
 <script lang="ts" setup>
 
 import { ref } from 'vue';
-
-
-
-//import ButtonLink from './ButtonLink.vue';
 import type { Post } from '~/types/types';
 import { useCreatemail } from '#imports';
 
 const emailTouched = ref<boolean>(false);
-//sende api
 const emailToSend = ref<Post>({
   nombre: '',
   email: '',
@@ -50,21 +45,9 @@ const success = ref(false);
 const error = ref<string | null>(null);
 
 const handleSubmit = async () => {
-  console.log("enviando handlesumbmit")
   emailTouched.value = true;
   if (isEmailValid.value) {
-
-    console.log("eviando peticion")
     try {
-        // Llama a la API con el formulario, de manera directa
-        /*
-      rgb(15, 57, 25)(57, 15, 15)(117, 22, 22)(79, 27, 27)wait $fetch('/api/apiemail', {
-          method: 'POST',
-          body: emialToSend,
-        });
-        */
-
-        //Usando Api a traves de un composable
         const data = useCreatemail(emailToSend.value);
 
         success.value = true;
@@ -73,13 +56,7 @@ const handleSubmit = async () => {
         success.value = false;
         error.value = err.message|| 'Error al enviar el correo.';
       }
-  
 
-
-    alert('Formulario enviado con éxito');
-
-  } else {
-    alert('Por favor, corrige los errores antes de enviar.');
   }
 };
 

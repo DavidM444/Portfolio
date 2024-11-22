@@ -2,13 +2,13 @@
   <main>
     <div>
       <div class="container text-center mb-3">
-        <div class="p-3 p-sm-1">Hola! soy desarrollador de software con enfasis en Backend.</div>
+        <div class="p-3 p-sm-1">Hola! soy David, desarrollador de software con énfasis en Backend.</div>
         <div class="p-3 p-sm-1">Bienvenido a mi Portfolio! 😀</div>
       </div>
       <div class="row pt-2">
         <div class="text-left col-md-8 desc">
           <h2>David Muñoz</h2>
-          <p>Desarrollador Back-End con conociento en ecosistema Java y Bases de datos SQL - Postgresql.</p>
+          <p>Desarrollador Back-End con conociento en ecosistema Java y Bases de datos SQL - PostgreSQl.</p>
         </div>
         <div class="text-center align-self-center col-md-4 desc1">
           <img loading="lazy" src="../assets/perfweb.webp" alt="David Muñoz, desarrollador backend, ilustratión perfil"
@@ -21,13 +21,12 @@
         <h3>Sobre mí</h3>
         <p class="about">David es un freelancer y desarrollador backend, entusiasta de la tecnología, que busca crear
           soluciones para procesos y actividades que provean servicios de bienestar común.
-          Implementa sus ideas a través del código, encontrando múltiples formas de crear soluciones.
-          Suele practicar deportes como el fútbol o realizar actividades laborales en el
-          campo, disfrutando del contacto con la naturaleza y lo que lo rodea.
+          Implementa ideas a través del código, buscando alcanzar una mejora significativa que contribuya en el desarrollo
+          del proyecto propuesto.
         </p>
-        <p class="about">Actualmente, está estudiando la implementación de nuevos conceptos en el área del backend, en
-          el cual maneja tecnolgías como Java - SprigBoot, MySql , Posgresql, Redis Db, entre otras.
-          También ha ralizado proyectos fronted, usando tecnologias como Nuxt.s, Vue.js, y herramientas de este
+        <p class="about">Actualmente, está estudiando la implementación de nuevos conceptos en el área del <span class="tec">Backend</span>, en
+          el cual maneja tecnologías como <span class="tec">Java - SprigBoot, PostgreSQL, Supabase, Redis Db, Docker</span>, entre otras.
+          También ha realizado proyectos fronted, usando tecnologías como Nuxt.js, Vue.js, y herramientas de este
           ecosistema.
         </p>
       </section>
@@ -87,6 +86,9 @@ h3 {
   font-family: "Nunito", sans-serif;
   color: var(--600);
 
+}
+.tec{
+  font-weight: 600;
 }
 
 .desc {
