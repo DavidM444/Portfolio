@@ -1,75 +1,34 @@
-# Nuxt 3 Minimal Starter
+# Portafolio de David Muñoz
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+¡Bienvenido a mi portafolio! Aquí encontrarás información sobre mí, mis habilidades y proyectos como desarrollador Back-End.
 
-## Setup
+## 🌟 Sobre mí
 
-Make sure to install the dependencies:
+Soy David Muñoz, un desarrollador apasionado por la tecnología, con experiencia en:
 
-```bash
-# npm
-npm install
+- 🖥️ Desarrollo web Back-End.
+- 📚 Uso de tecnologías como Nuxt.js, Redis y Spring Boot.
+- 🚀 Creación de soluciones innovadoras para procesos y servicios.
 
-# pnpm
-pnpm install
+## 🛠️ Tecnologías
 
-# yarn
-yarn install
+- **Lenguajes de programación**: Java, TypeScript, JavaScript.
+- **Frameworks y herramientas**: Spring Boot, Nuxt.js, Docker.
+- **Bases de datos**: PostgreSQL, Supabase, Redis.
 
-# bun
-bun install
-```
+## 🚀 Proyectos destacados
 
-## Development Server
+1. **[Gestor Monetario Personal](https://github.com/DavidM444/Account)**  
+   Aplicación para la gestión de ingresos y gastos, desarrollada con Java , Thymeleaf  y Supabase.
+   
+## 🤝 Redes sociales
 
-Start the development server on `http://localhost:3000`:
+- **GitHub**: [@DavidM444](https://github.com/DavidM444)
 
-```bash
-# npm
-npm run dev
+## 📧 Contacto
 
-# pnpm
-pnpm run dev
+¿Quieres trabajar conmigo o colaborar en algún proyecto? ¡Contáctame!
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+¡Gracias por visitar mi portafolio! 😊
