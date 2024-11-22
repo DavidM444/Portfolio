@@ -1,7 +1,7 @@
 <template>
   <div> 
       <div class="page2">
-        <Navar/>
+        <Navbar/>
       <slot></slot>
 
       <Footer/>
