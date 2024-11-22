@@ -20,11 +20,3 @@
 
 }
 </style>
-<script lang="ts">
-
-
-  definePageMeta({
-    title: 'David Muñoz - desarrollador de software - Backend',
-    description: 'Portfolio web de David Muñoz, backend developer'
-  })
-</script>
