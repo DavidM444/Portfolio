@@ -1,0 +1,37 @@
+.infoTech > p{
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+
+}
+.recursos td{
+    background-color: transparent;
+    font-family: 'Nunito',sans-serif;
+}
+.recursos td:nth-child(2){
+    color:var(--500);
+  
+}
+.recursos td:nth-child(3){
+    color: var(--text);
+}
+.infoTech h2{
+    color: var(--600);
+    margin-bottom: 1rem;
+      font-family: 'Open Sans',sans-serif;
+}
+
+h3{
+    color: var(--400);
+    margin-bottom: 1rem;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 600;
+}
+/**dark mode */
+.dark-mode .infoTech >p{
+    color: var(--100);
+}
+
+.dark-mode .recursos td:nth-child(3){
+    color: var(--100);
+}
+
