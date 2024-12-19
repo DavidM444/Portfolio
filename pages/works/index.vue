@@ -5,7 +5,7 @@
     <section class="row">
       <a href="/works/api" class=" pt-3 col-12  col-sm-6">
         <div class="card tarjeta">
-          <img loading="lazy" src="~/assets/api.webp" alt="ilustracion api github" width="100%" height="100%">
+          <NuxtImg src="/assets/api.webp"></NuxtImg>
           <div>
             <h5 class="card-title">API Gestión Textil</h5>
           </div>
@@ -16,7 +16,7 @@
 
       <a href="/works/quality" class="pt-3  col-12 col-sm-6 ">
         <div class="card tarjeta">
-          <img src="~/assets/qualitytex.webp" alt="ilustracion web Quality Tex"  width="100%" height="100%">
+          <NuxtImg src="/assets/qualitytex.webp" alt="ilustracion web Quality Tex" width="100%" height="100%"></NuxtImg>
           <div>
             <h5 class="card-title">Quality Tex</h5>
           </div>
@@ -29,7 +29,7 @@
 
       <a href="/works/apprevenue" class="pt-3  col-12 col-sm-6"  width="100%" height="100%">
         <div class="card tarjeta">
-          <img src="~/assets/revenue.webp" loading="lazy" alt="pokedex">
+          <NuxtImg src="/assets/revenue.webp" loading="lazy" alt="pokedex"></NuxtImg>
           <div>
             <h5 class="card-title">App revenue</h5>
           </div>
