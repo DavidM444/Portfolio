@@ -19,8 +19,9 @@
         sobre quién puede acceder y modificar la información.
       </p>
     </div>
+    <ButtonLink :url=url />   
 
-    <div>
+    <div class="mt-3">
       <div>
         <h3>Tecnologias y recursos</h3>
       </div>
@@ -96,6 +97,10 @@
 </template>
 
 <script lang="ts" setup>
+const url = {
+  link:"https://github.com/DavidM444/Api-Java-Tex",
+  text: "Visitar"
+}
 definePageMeta({
   //layout: 'subroutes',
 })
