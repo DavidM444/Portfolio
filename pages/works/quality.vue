@@ -12,9 +12,10 @@
       </p>
    
     </div>
+    <ButtonLink :url=urlData />
 
     <div>
-      <div>
+      <div class="mt-3">
         <h3>Tecnologías y recursos</h3>
       </div>
       <div class="table-responsive-xl">
@@ -57,6 +58,10 @@
 
 <script lang="ts" setup>
 
+const urlData = {
+  link:"https://github.com/DavidM444/Textil-Fronted",
+  text:"Visitar"
+}
 
 </script>
 <style scoped>

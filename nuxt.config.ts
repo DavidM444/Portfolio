@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
+  image:  {
+    dir: 'assets',
+  },
   css: ['~/assets/css/main.css'],
   modules: ['nuxt-icon', '@nuxtjs/color-mode'],
   devtools: {

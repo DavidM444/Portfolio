@@ -106,6 +106,7 @@ form {
 
 form input,textarea{
   border-color: var(--300);
+  resize: none;
 
 }
 

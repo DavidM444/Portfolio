@@ -5,7 +5,7 @@
     <section class="row">
       <a href="/works/api" class=" pt-3 col-12  col-sm-6">
         <div class="card tarjeta">
-          <NuxtImg src="/assets/api.webp"></NuxtImg>
+          <img src="/assets/api.webp"></img>
           <div>
             <h5 class="card-title">API Gestión Textil</h5>
           </div>
@@ -16,11 +16,10 @@
 
       <a href="/works/quality" class="pt-3  col-12 col-sm-6 ">
         <div class="card tarjeta">
-          <NuxtImg src="/assets/qualitytex.webp" alt="ilustracion web Quality Tex" width="100%" height="100%"></NuxtImg>
+          <img src="/assets/qualitytex.webp" alt="ilustracion web Quality Tex" width="100%" height="100%"></img>
           <div>
             <h5 class="card-title">Quality Tex</h5>
           </div>
-          
           <p class="card-text">Web para la gestión de registros textiles, en una empresa textil.
             Presenta y maneja información de manera eficaz.
           </p>
@@ -29,7 +28,7 @@
 
       <a href="/works/apprevenue" class="pt-3  col-12 col-sm-6"  width="100%" height="100%">
         <div class="card tarjeta">
-          <NuxtImg src="/assets/revenue.webp" loading="lazy" alt="pokedex"></NuxtImg>
+          <img src="/assets/revenue.webp" alt="pokedex"></img>
           <div>
             <h5 class="card-title">App revenue</h5>
           </div>

@@ -19,6 +19,7 @@
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.3.2",
     "@types/nodemailer": "^6.4.16",
+    
     "nuxt-icon": "^0.6.9"
   }
 }
