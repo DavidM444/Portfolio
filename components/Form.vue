@@ -24,8 +24,15 @@
 
       <button class="btn btn-success" type="submit" aria-describedby="enviar formulario">Enviar</button>
     </form>
-    <p v-if="success">¡Mensaje enviado con éxito!</p>
-    <p v-if="error">Ocurrio un error: {{ error }}</p>
+    <div v-if="error" class="alert alert-danger mt-3" role="alert">
+      {{ error }}
+      <div v-if="error.includes('directamente')">
+        <a :href="`mailto:${defaultRecipient}`">{{ defaultRecipient }}</a>
+      </div>
+    </div>
+    <div v-if="success" class="alert alert-success mt-3" role="alert">
+      ¡Mensaje enviado con éxito!
+    </div>
   </div>
 </template>
 
@@ -45,34 +52,60 @@ const emailToSend = ref<Post>({
 
 const success = ref(false);
 const error = ref<string | null>(null);
-
+const defaultRecipient = "ngxdavid050@gmail.com";
 const handleSubmit = async () => {
-  const defaultRecipient = "ngxdavid050@gmail.com";
+  
   emailTouched.value = true;
-  if (isEmailValid.value) {
-    if (validUseGmail(emailToSend.value.email)) {
-      open(`https://mail.google.com/mail/?view=cm&fs=1&to=${defaultRecipient}&su=${"Contacto"}&body=${encodeURIComponent( emailToSend.value.mensage
-      )}`)
+  
+  if (!isEmailValid.value) {
+    error.value = "Por favor, ingrese un correo válido";
+    return;
+  }
+
+  // Crear el contenido del correo
+  const mailContent = `
+Nombre: ${emailToSend.value.nombre}
+Email: ${emailToSend.value.email}
+Mensaje: ${emailToSend.value.mensage}
+  `.trim();
+
+  try {
+    // Primero intentar con mailto (funciona en la mayoría de dispositivos)
+    const mailtoLink = `mailto:${defaultRecipient}?subject=Contacto&body=${encodeURIComponent(mailContent)}`;
+
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      window.location.href = mailtoLink;
+    } else {
+
+      if (validUseGmail(emailToSend.value.email)) {
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${defaultRecipient}&su=Contacto&body=${encodeURIComponent(mailContent)}`);
+      } else if (validOutlook(emailToSend.value.email)) {
+        window.open(`https://outlook.office.com/mail/deeplink/compose?to=${defaultRecipient}&subject=Contacto&body=${encodeURIComponent(mailContent)}`);
+      } else {
+        window.location.href = mailtoLink;
+      }
     }
-    else if (validOutlook(emailToSend.value.email)) {
-      window.open(`https://outlook.office.com/mail/deeplink/compose?to=${defaultRecipient}&subject=${"Contacto"}&body=${encodeURIComponent(emailToSend.value.mensage)}`);
-    }
-    else {
-      alert("Use un correo con dominio en Gmail o Outlook validos.");
-    }
+    
+    success.value = true;
+    emailToSend.value = {
+      nombre: '',
+      email: '',
+      mensage: ''
+    };
+    emailTouched.value = false;
+  } catch (e) {
+    error.value = "No se pudo abrir el cliente de correo. Por favor, envíe un correo directamente a " + defaultRecipient;
   }
 };
-
 
 const isEmailValid = computed(() => {
   return isValidEmail(emailToSend.value.email);
 });
 
 function isValidEmail(val: string): boolean {
-  const validDomain: boolean = validOutlook(val) || validUseGmail(val);
-  const emailPattern = /^(?=[a-zA-Z0-9@._%+-]{6,254}$)[a-zA-Z0-9._%+-]{1,64}@(?:[a-zA-Z0-9-]{1,63}\.){1,8}[a-zA-Z]{2,63}$/;
-  return emailPattern.test(val) && validDomain;
-};
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(val);
+}
 
 function validUseGmail(text: string): boolean {
   const regex = /gmail\.com/i;
@@ -94,7 +127,7 @@ function validOutlook(text: string): boolean {
   color: red !important;
 }
 
-.dark-mode .alert {
+.dark-mode  {
   background-color: red;
 }
 
