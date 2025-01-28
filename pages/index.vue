@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div>
+    <section>
       <div class="container text-center mb-3">
         <div class="p-3 p-sm-1">Hola! soy David, desarrollador de software con énfasis en Backend.</div>
         <div class="p-3 p-sm-1">Bienvenido a mi Portfolio! 😀</div>
@@ -12,10 +12,10 @@
         </div>
         <div class="text-center align-self-center col-md-4 desc1">
           <img loading="lazy" src="../assets/perfweb.webp" alt="David Muñoz, desarrollador backend, ilustratión perfil"
-            class="card-img-top face">
+            class="card-img-top face" width="200" height="200">
         </div>
       </div>
-    </div>
+    </section>
     <article>
       <section>
         <h3>Sobre mí</h3>
@@ -25,7 +25,7 @@
           del proyecto propuesto.
         </p>
         <p class="about">Actualmente, está estudiando la implementación de nuevos conceptos en el área del <span class="tec">Backend</span>, en
-          el cual maneja tecnologías como <span class="tec">Java - SprigBoot, PostgreSQL, Supabase, Redis Db, Docker</span>, entre otras.
+          el cual maneja tecnologías como <span class="tec">Java - SpringBoot, PostgreSQL, Supabase, Redis Db, Docker</span>, entre otras.
           También ha realizado proyectos fronted, usando tecnologías como Nuxt.js, Vue.js, y herramientas de este
           ecosistema.
         </p>
@@ -59,11 +59,11 @@
       </section>
       <div>
         <h3>Redes Sociales</h3>
-        <ul>
+        <ul role="list">
           <li>
             <a target="_blank" href="https://github.com/DavidM444">
               <button class="btn" aria-label="Ver perfil de GitHub">
-                <Icon name="bxl:github" class="icon" size="1.5em" />
+                <Icon name="bxl:github" class="icon" size="1.5em" aria-hidden="true"/>
                 @davidm444
               </button>
             </a>
